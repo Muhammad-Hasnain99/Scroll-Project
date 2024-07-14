@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Scroll Project</title>
+</head>
+
+<body>
+    <header id="home" class="md:h-[100vh]">
+        <div class="img"></div>
+        <nav class="nav mt-[2px]">
+            <div class="nav-center bg-white w-full flex flex-col pt-2 pb-2 md:bg-transparent md:flex-row">
+                <div class="logo ml-4 md:ml-10">
+                   <img class="h-[50px] w-[50px] md:h-[60px] md:w-[60px]" src="logo.svg" alt="">
+                </div>
+                <button class="menu-btn absolute right-4 top-4 hover:text-[#40CFD4] md:hidden">
+                    <i class='bx bx-menu text-3xl'></i>
+                </button>
+                <div class="link-container block md:hidden mt-[-0.7rem]">
+                    <ul class="links ml-3 mt-2 space-y-4 text-gray-80">
+                        <li></li>
+                        <li class="hover:text-black transition">
+                            <a href="#home" class="scroll-link">Home</a>
+                        </li>
+                        <li class="hover:text-black transition">
+                            <a href="#about" class="scroll-link">About</a>
+                        </li>
+                        <li class="hover:text-black transition">
+                            <a href="#services" class="scroll-link">Services</a>
+                        </li>
+                        <li class="hover:text-black transition">
+                            <a href="#tours" class="scroll-link">Tours</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-container hidden md:block  absolute right-20 mt-[-0.7rem]">
+                    <ul class="link flex space-x-10 text-xl mt-6 font-medium text-white font-mono">
+                        <li></li>
+                        <li class="hover:text-black transition">
+                            <a href="#home" class="scroll-link">Home</a>
+                        </li>
+                        <li class="hover:text-black transition">
+                            <a href="#about" class="scroll-link">About</a>
+                        </li>
+                        <li class="hover:text-black transition">
+                            <a href="#services" class="scroll-link">Services</a>
+                        </li>
+                        <li class="hover:text-black transition">
+                            <a href="#tours" class="scroll-link">Tours</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="banner text-white mt-4">
+            <div class="container text-center space-y-6">
+                <h1 class="text-[2.5rem] font-bold md:text-7xl">SCROLL PROJECT</h1>
+                <p class="font-mono text-sm md:text-lg md:w-[700px] md:m-auto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit dolores ipsum omnis, iure aliquid
+                    ab alias ratione quas possimus illum?
+                </p>
+                <li  class="border-2 border-white w-[180px] transition hover:bg-white hover:text-[#40CFD4] h-[40px] m-auto pt-1 cursor-pointer list-none bg-none font-mono text-xl">
+                <a href="#tours" class="scroll-link-btn" >
+                    Explore Tours
+                </a>
+            </li>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="section h-[100vh] bg-gray-200 w-[100%] mt-[-0.8rem]">
+        <div class="title text-3xl md:text-4xl font-medium text-center">
+            <h1 class="text-[#102A42]">ABOUT <span class="text-[#40CFD4]">US</span></h1>
+        </div>
+    </section>
+
+    <section id="services" class="section h-[100vh] w-[100%]">
+        <div class="title text-3xl md:text-4xl font-medium text-center">
+            <h1 class="text-[#102A42]">OUR <span class="text-[#40CFD4]">SERVICES</span></h1>
+        </div>
+    </section>
+
+    <section id="tours" class="section h-[100vh] bg-gray-200 w-[100%] mt-[-0.8rem]">
+        <div class="title text-3xl md:text-4xl font-medium text-center">
+            <h1 class="text-[#102A42]">FEATURED <span class="text-[#40CFD4]">TOURS</span></h1>
+        </div>
+    </section>
+
+     <footer class="section bg-[#102A42] flex justify-center item-center pb-[5rem] pt-[5rem]  text-white">
+        <p class="text-[1rem] text-center font-mono md:text-[1.4rem]">
+            Copyright &copy; Backroads Travel Tours Company
+            <span id="date">
+                
+            </span>
+            . All Rights Reserved
+        </p>
+     </footer>
+     <a href="#home" class="scroll-link top-link fixed bottom-[3rem] right-[3rem] z-[-100px]">
+        <i class='bx bx-up-arrow-alt  text-4xl animate-bounce rounded-xl bg-[#40CFD4] text-white mt-[-4rem] md:right-12 md:mt-[-7rem]' ></i>
+     </a>
+     <script src="server.js"></script>
+</body>
+
+</html>

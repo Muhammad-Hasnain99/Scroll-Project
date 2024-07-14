@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header::after{
+content: "";  
+background:linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(images/hero-bcg.jpeg);
+height: 125vh;
+width: 100%;
+background-position: center;
+background-size: cover;
+position: absolute;
+inset: 0;
+z-index: -1;
+}
+.logo{
+    font-family: "Playwrite ES Deco", cursive;
+}
+.banner{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.871);
+    text-decoration:black;
+    width: 100%;
+}
+
+.fixed-nav .link{
+    color: black;
+}
+.fixed-nav .link a:hover{
+    color: #40CFD4;
+}
+html{
+    scroll-behavior: smooth;
+}
+.top-link{
+    visibility: hidden;
+}
+.show-link{
+    visibility: visible;
+}
